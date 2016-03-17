@@ -1,0 +1,19 @@
+PATH
+  remote: ../
+  specs:
+    szszfr (0.1.0)
+      rack
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    rack (1.6.4)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  szszfr!
+
+BUNDLED WITH
+   1.11.2
