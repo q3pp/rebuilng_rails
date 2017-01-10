@@ -3,7 +3,12 @@ class IndexController < Szszfr::Controller
     "HI MY LITTLE FRIEND"
   end
 
-  def method_missing(method)
+  def template
+    @fuuuuu = "Yo"
+    render 'hello', name: Szszfr::RandomUser.name
+  end
+
+  def self.method_missing(method)
     "no route for #{method}"
   end
 end

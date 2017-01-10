@@ -1,9 +1,7 @@
-require "szszfr"
-	$LOAD_PATH << File.join(File.dirname(__FILE__), '..', 'app', 'controllers')
-	require 'index_controller'
+require 'szszfr'
+$LOAD_PATH << File.join(File.dirname(__FILE__), '..', 'app', 'controllers')
 
-module MyApp
+module ExampleApp
 	class Application < Szszfr::Application
-
 	end
 end

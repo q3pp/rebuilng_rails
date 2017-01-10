@@ -1,2 +1,2 @@
 require './config/application'
-run MyApp::Application.new
+run ExampleApp::Application.new
