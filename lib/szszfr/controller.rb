@@ -1,6 +1,9 @@
+require 'szszfr/file_model'
+
 module Szszfr
   class Controller
     require "erubis"
+    include Szszfr::Model
 
     def initialize(env)
       @env = env
@@ -19,7 +22,7 @@ module Szszfr
     def render(view_name, locals = {})
       filename = File.join "app", "views",
       controller_name, "#{view_name}.erb"
-      
+
       template = File.read filename
       eruby = Erubis::Eruby.new(template)
       eruby.result locals.merge(:env => env, variables: instance_variables)

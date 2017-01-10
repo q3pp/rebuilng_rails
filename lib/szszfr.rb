@@ -4,6 +4,7 @@ require "szszfr/routing"
 require "szszfr/util"
 require "szszfr/dependencies"
 require "szszfr/controller"
+require "szszfr/file_model"
 
 module Szszfr
 

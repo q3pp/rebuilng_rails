@@ -4,11 +4,16 @@ class IndexController < Szszfr::Controller
   end
 
   def template
-    @fuuuuu = "Yo"
     render 'hello', name: Szszfr::RandomUser.name
   end
 
-  def self.method_missing(method)
-    "no route for #{method}"
+  def file_model
+    record = FileModel.find(1)
+    render 'record', object: record
+  end
+
+  def all_records
+    records = FileModel.all
+    render 'records', object: records
   end
 end
